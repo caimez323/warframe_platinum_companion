@@ -29,6 +29,7 @@ else:
 
 """
 pytesseract.pytesseract.tesseract_cmd = "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "C:\\Users\\Clément\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe"
 x1, y1, x2, y2 = 475, 387, 1450, 459
 """
 #https://stackoverflow.com/questions/52899174/real-time-ocr-in-python
