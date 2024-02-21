@@ -4,6 +4,7 @@ import pytesseract
 from PIL import Image
 import numpy as np
 
+from closest import get_closest_wrf
 
 def noise_removal(image):
     import numpy as np
@@ -65,7 +66,12 @@ print(extracted_text)
 print("blur")
 print(pytesseract.image_to_string(Image.open('preprocessed_blur.png')))
 print("negative")
-print(pytesseract.image_to_string(Image.open('preprocessed_negative.png')))
+negative_text = pytesseract.image_to_string(Image.open('preprocessed_negative.png'))
+print(negative_text)
+
+for word_found in negative_text.split(" "):
+    get_closest_wrf(word_found)
+    #print(word_found)
 
 # Attendez une touche et fermez les fenêtres d'affichage
 cv2.waitKey(0)
