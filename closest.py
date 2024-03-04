@@ -1,4 +1,3 @@
-
 import difflib, requests
 
 warfarme_database = [] #load from json
