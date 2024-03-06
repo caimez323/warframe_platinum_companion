@@ -15,8 +15,10 @@ def create_database(lang):
 def load_database():
     pass
 
-def get_closest_wrf(word):
+def update_database():
+    pass
 
+def get_closest_wrf(word):
     warfarme_database = create_database("fr")
     r = (difflib.get_close_matches(word,warfarme_database))
     print(r)
